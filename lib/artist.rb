@@ -11,9 +11,6 @@ class Artist
   end
 
   def songs 
-    # look at all songs
-    # find songs that have an artist of ourself
-    # return those songs, save as @songs variable 
     @songs = Song.all.find_all { |song| song.artist == self}
   end 
   
@@ -28,7 +25,6 @@ class Artist
   end 
   
   def self.song_count
-    #class 
     Song.all.count 
   end 
 
